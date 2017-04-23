@@ -3,7 +3,7 @@ window.onload=function(){
 var display=document.getElementById("display");
 var btn=document.getElementById('btn');
 btn.addEventListener("click",function(){
-    var ourRequest= new XMLHttpRequest();
+    var ourRequest= new XMLHttpsRequest();
     var req=document.getElementById("city").value+','+document.getElementById("country").value;
 ourRequest.open('GET','https://api.openweathermap.org/data/2.5/weather?q='+req+'&APPID=63c93cdf337be8a9971c60719009e0b4');
 ourRequest.onload =function() {
